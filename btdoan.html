@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cua hang rau sạch</title>
+  <link rel="stylesheet"  href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ </head>
+
+<body>
+<div class="container-fluid">
+
+	<div class="menufirst">
+		<div class="menufirst-left">
+			<p class="xd">You want to deliver at </p>
+			<select class="xxd">
+		  	<option value="volvo">Ho Chi Minh</option>
+		 		 <option value="saab">Ha Noi</option>
+		  	<option value="opel">Đa Lat</option>
+		  	<option value="audi">Bien Hoa</option>
+			</select>
+		</div>
+		<div class="menufirst-right">
+			<div class="ngonngu1">VIE</div>
+			<div class="ngonngu2">ENG</div>
+			<p class="xf">Language</p>
+		</div>
+	</div>
+
+	<header class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <img src="https://cdn.web30s.vn/datafiles/4448/upload/images/14867154122765_logo.png" style="width:43%" alt="">
+      </div>
+      <div class="col-md-7">
+          <div class="header-grid">
+            <ul>
+              <li class="in-up" >Hotline: <a href="tel:(028) 6256 3737" class="scroll">(028) 6256 3737</a> <label>|</label></li>
+              <li class="in-up" >Email: <a href="mailto:web@pavietnam.vn" class="scroll">web@pavietnam.vn</a><label>|</label></li>
+              <li class="dv-mem-login" style="display: none"></li>
+                <div class="glo-dangky-gruop">
+                  <ul>
+                    <li><a href="http://apps.mailinh.vn/ptmcc/login.php" OnClick="ShowHidden('id_mem_login'); return false;"
+                           class='mem memdn'>Log in</a><label>|</label></li>
+                    <li><a href="#"
+                           class='mem memdk'>Registration
+</a></li>
+                  </ul>
+                </div>
+                <div class="clearfix"> </div>
+
+            </ul>
+          </div>
+          <div class="content-cart">
+          
+            <div class="search-top">
+              <div class="search">
+                <input type="text" class="key_timkiem"  value="Search..." onFocus="if (this.value == 'Nhập từ khóa tìm kiếm...'){this.value='';}" onBlur="if (this.value == '') {this.value='Search...';}"/>
+                <input type="button"  value="" onClick="SEARCH_btn()">
+
+              </div>
+              <div class="clearfix"> </div>
+            </div>  
+            
+          </div>
+    </div>
+  </header>
+  <nav class="navbar navbar-default" role="navigation" style="border-top: 4px solid #ff9900;">
+    <div class="container">
+      
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" style="color:green;" href="#">HOME</a>
+      </div>
+  
+      
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a  style="color:green;" class="nv" href="#">ABOUT US</a></li>
+          <li class="dropdown">
+            <a href="#" style="color:green;" class="dropdown-toggle" data-toggle="dropdown">PRODUCT <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a  style="color:green;" href="#">VEGETABLES</a></li>
+              <li><a  style="color:green;" href="#">ORGANIC VEGETABLES</a></li>
+              <li><a  style="color:green;" href="#">VEGETABLES DA LAT</a></li>
+              <li><a  style="color:green;" href="#">CLEAN MUSHROOMS</a></li>
+              <li><a  style="color:green;" href="#">SAFE VEGETABLES</a></li>
+              <li><a  style="color:green;" href="#">CLEAN FRUITS</a></li>
+            </ul>
+          </li>
+          <li><a style="color:green;" class="nav-right" href="#">NEWS</a></li>
+          <li><a style="color:green;" class="nav-right" href="#">CONTACT</a></li> 
+        </ul>
+      </div>
+    </div>
+  </nav>
+		
+	
+  <div class="slideshow">
+  <script language="javascript">
+    $(document).ready(function()
+    {
+      initSlideShow();
+      
+    });
+    function initSlideShow()
+    {
+      if($(".slideshow div").length > 1) 
+      {
+        var transationTime = 5000;
+        $(".slideshow div:first").addClass('active'); 
+        setInterval(slideChangeImage, transationTime); 
+      }
+    }
+    
+    
+    function slideChangeImage()
+    {
+      var active = $(".slideshow div.active"); 
+      if(active.length == 0)
+      {
+        active = $(".slideshow div:last"); 
+      }
+      
+      var next = active.next().length ? active.next() : $(".slideshow div:first"); 
+      active.addClass('lastactive');
+      next.css({opacity:0.0}) 
+          .addClass('active')
+          .animate({opacity:1.0}, 1500, function()
+          {
+            active.removeClass("active lastactive");  
+          });
+       
+    }
+  </script>
+    <div><a href="#"><img src="https://www.toolversed.com/wp-content/uploads/2017/09/How-Much-Spacing-Should-There-Be-Between-Tomato-Plants.jpg" alt="" border="0" /></a></div>
+    <div><a href="#"><img src="https://znews-photo-td.zadn.vn/w660/Uploaded/wyhktpu/2015_09_28/Anh1.jpg" alt="" border="0" /></a></div>
+    <div><a href="#"><img src="http://images.sunflower.vn/wp-content/uploads/2016/02/IC_SHU_vegetables_144911503.jpg" alt="" border="0" /></a></div>
+  </div>
+  <div id="conten">
+		<article>
+	  	<section class="content gallery pad1" style='padding:0'>
+	      <div class="midle_main_idclass fix1200_cus1">
+					<div class="about-team">
+	          <div class="container">
+              <div class ="row">
+                <div class="col-md-9">
+		              <div class="dv-child-left">
+      		          <h3 class="title">INTRODUCE</h3>
+			                <div class="content-top">
+              				
+              				  	<!--  -->
+              					<div id="showText"><p>Clean vegetable farm has successfully applied the model of garden pond (VAC) with new technology in breeding and farming. It is the technology using EM is synthesis of five groups of microorganisms effectively by Japanese scientists. Research has been widely applied in the world including Vietnam.</p>
+              					<p><img src="https://png.pngtree.com/element_origin_min_pic/17/03/19/680c7dc598d7117b4556846dee0308d3.jpg" alt="" /></p>
+              					<p><strong>The Farm page we use the EM on:</strong></p>
+              					<p>- Use EM as a micro-buffer (EM preparation, sawdust and other components): Micro padding creates the most natural clean environment for animals, helping them stay healthy. good resistance and less disease. Especially, using this cushioned bed liner, there is no waste to the environment, no odor, and after the decomposition it will form a very good microbiological fertilizer to make fertilizer for microorganism in cultivation. other organic products.</p>
+              					<p>- Use EM preparation to incubate food (raw materials include rice bran, corn, soybean meal ... incubated with EM preparations for fermentation): When feeding pets combine with green vegetables of the page No growth stimulants, lean meat, antibiotics, livestock are healthy, grow well and disease free.</p>
+              					<p><img src="http://webnongnghiep.web30s.vn/datafiles/1/10-02-2017/1.jpg" alt="" /></p>
+              					<p>- Use EM to grow organic vegetables. The waste from animal husbandry will be a very good source of organic fertilizer for vegetables. Vegetables fertilized with these fertilizers are less pestilent so they do not have to use insecticides but still grow well and retain their taste. Its natural and ecological environment, stimulating the growth of microorganisms.</p></div>
+              					<!--  --> 
+              				  </div>
+				                <div class="clearfix">
+                         
+                      </div>
+			            </div>
+                  <div class="clearfix">
+                    
+                </div> 
+               </div>
+
+                <div class="col-md-3">
+    	           <div class="dv-child-right">
+                    <div class="product">
+                      <div class="dv_content_leftsp">
+                        <h3>PRODUCT PORTFOLIO</h3>
+                        <ul class="dv_list_dmsp">
+                          <li><a href="#">Fresh vegetable</a><span class='SHOW_menu_left' data='Rau-sach-355765'></span></li>
+                          <li><a href="#">Organic vegetables</a><span class='SHOW_menu_left' data='Rau-huu-co-355779'></span></li>
+                          <li><a href="#">Fresh vegetable Da Lat</a><span class='SHOW_menu_left' data='Rau-sach-Da-Lat-355781'></span></li>
+                          <li><a href="#">Clean mushrooms</a><span class='SHOW_menu_left' data='Nam-sach-Viet-355782'></span></li>
+                          <li><a href="#">Vegetables safe</a><span class='SHOW_menu_left' data='Rau-an-toan-355778'></span></li>
+                          <li><a href="#">Fresh fruit</a><span class='SHOW_menu_left' data='Hoa-qua-sach-355768'>+</span>
+                            <ul class='dv_list_dmsp_2 ul-data-Hoa-qua-sach-355768'>
+                	            <li><a href="#">Fruit import</a></li>
+                	            <li><a href="#">Fruit Viet Nam</a></li>
+                	            <li><a href="#">Dried fruits Da Lat</a></li>
+                            </ul>
+                        </ul>
+
+                      </div>
+
+                      <script type="text/javascript">
+                          $(".SHOW_menu_left").click(function(){
+                            var data    = $(this).attr('data');
+                            var data_text   = $(this).html();
+                            if(data_text == "+") 
+                              {
+                                
+                                $( ".SHOW_menu_left" ).each(function( index ) {
+                                  if($( this ).html() == "-"){
+                                    $(this).html('+');
+                                  }
+                                });
+
+                                $(this).html("-");
+                                $(".dv_list_dmsp_2").hide('500');
+                                $(".ul-data-"+data).show('500');
+                              }
+                            else if(data_text == "-") 
+                              {
+                                $(this).html("+");
+                                $(".ul-data-"+data).hide('500');
+                              }
+                          });
+                      </script>
+
+
+                      <div class="dv_content_leftsp">
+                          <h3>SELLING PRODUCTS</h3>
+                          <div class="marqueew">
+                            <div class='dv-spleft'>
+                		          <a href="#"><img src='https://cdn.web30s.vn/datafiles/4448/upload/thumb_images/14867761012249_14750443998850_chanh-day-1.jpg' alt='Chanh giây' class='img-responsive' /></a>
+                		            <h4><a href="#">Lemon</a></h4>
+                		            <div class='price-left'>
+                		              <span class='item_price'>1,2 <sup>usd</sup></span>
+                		              <span class='item_goc'>2 <sup>usd</sup></span>
+                		            </div>
+                		            <div class='dv-nd'>Chuy&ecirc;n cung cấp n&ocirc;ng sản khu vực trong v&agrave; ngo&agrave;i nước</div>
+                		            <div class='clearfix'> </div>
+                            </div>
+                		        <div class='dv-spleft'>
+                		            <a href='https://webnongnghiep.web30s.vn/Bau-355834'><img src='http://sohanews.sohacdn.com/zoom/700_438/2014/ca-chua1-99407-crop1398477571590p.jpg' alt='Cà chua' class='img-responsive' /></a>
+                		              <h4><a href='https://webnongnghiep.web30s.vn/Bau-355834'>Tomato</a></h4>
+                		              <div class='price-left'>
+                		                <span class='item_price'>2,6 <sup>usd</sup></span>
+                		                <span class='item_goc'>3,5 <sup>usd</sup></span>
+                		              </div>
+                		              <div class='dv-nd'>Chuy&ecirc;n cung cấp n&ocirc;ng sản khu vực trong v&agrave; ngo&agrave;i nước</div>
+                		              <div class='clearfix'> </div>    
+                		        </div>
+		                      </div>
+
+                          <div class="dv_content_leftsp">
+                            <h3>LIGHTING NEWS</h3>
+                            <div id="newsRight"> 
+                              <a href="#" title='Investment attraction from agricultural machinery is very large'> 
+                    		        <img src='https://cdn.web30s.vn/datafiles/4448/upload/thumb_images/14867224514903_14750453388438_tr7ta.JPG' width='230' alt='Sức hút đầu tư máy nông nghiệp rất lớn'>
+                    		        <h4>Investment attraction from agricultural machinery is very large</h4>
+                    		        <div class='clear'></div>
+                    		      </a>
+                              <a href="#" title=' Create jobs from agricultural services'> 
+                    		        <img src='https://cdn.web30s.vn/datafiles/4448/upload/thumb_images/14867224048557_14750454231894_artworks-000139171563-t9ajyn-t500x500.jpg' width='230' alt=' Tạo việc làm từ dịch vụ nông nghiệp'>
+                    		        <h4> Create jobs from agricultural services</h4>
+                    		        <div class='clear'></div>
+                    		      </a>
+                              <a href="#" title=' Agricultural labor: large quantity, low quality'> 
+                    		        <img src='https://cdn.web30s.vn/datafiles/4448/upload/thumb_images/14867223339809_14750452342439_raised-beds.jpg' width='230' alt=' Lao động nông nghiệp: Số lượng lớn, chất lượng thấp'>
+                    		        <h4> Agricultural labor: large quantity, low quality</h4>
+                    		        <div class='clear'></div>
+                    		      </a>
+                              <a href="#" title=' Development of agricultural services: joy for farmers'> 
+                    		        <img src='https://cdn.web30s.vn/datafiles/4448/upload/thumb_images/14867222706790_14779082017502_tt6.png' width='230' alt=' Phát triển dịch vụ nông nghiệp: Niềm vui cho nhà nông'>
+                    		        <h4> Development of agricultural services: joy for farmers</h4>
+                    		        <div class='clear'></div>
+                    		      </a>
+                              <a href="#" title=' Agricultural services need to expand production and business'> 
+                    		        <img src='https://cdn.web30s.vn/datafiles/4448/upload/thumb_images/14867221976750_14750455014013_zze1430966369.jpg' width='230' alt=' HTX dịch vụ nông nghiệp cần mở rộng sản xuất, kinh doanh'>
+                    		        <h4>Agricultural services need to expand production and business</h4>
+                    		        <div class='click'></div>
+                    		      </a>  
+                            </div>
+                          </div>
+                          <div class="dv_content_leftsp">
+                            <h3>Tags</h3>
+                            <ul class="tags_links">
+                              <li><a href="#">fresh vegetable</a></li>
+                              <li><a href="#"> agricultural</a></li>
+                              <li><a href="#/san-pham/?keysearch=thịt+sạch"> clean meat</a></li>
+                              <li><a href="#/?keysearch=hoa+quả+sạch"> clean fruits</a></li>
+                              <li><a href="#/san-pham/?keysearch=thịt+gia+cầm"> poultry</a></li>
+                              <li><a href="#/san-pham/?keysearch=thủy+sản"> Seafood</a></li>
+                              <li><a href="#/san-pham/?keysearch=hải+sản"> seafood</a></li>
+                              <li><a href="#/san-pham/san-pham/?keysearch=thực+phẩm+sơ+chế"> thực phẩm sơ chế</a></li>
+                              <li><a href="#/san-pham/san-pham/?keysearch=nấm+sạch"> clean mushrooms</a></li>
+                              <li><a href="#/san-pham/san-pham/?keysearch=rau+hữu+cơ"> organic vegetables</a></li>
+                              <li><a href="#/san-pham/san-pham/?keysearch=rau+an+toàn"> safe vegetables</a></li>
+                              <li><a href="#/san-pham/san-pham/?keysearch=thịt+gia+cầm"> poultry</a></li>
+                              <li><a href="#/san-pham/san-pham/?keysearch=thịt+bò"> beef</a></li>
+                              <li><a href="#/san-pham/san-pham/?keysearch=thịt+lợn"> pork</a></li>
+                              <li><a href="#/san-pham/san-pham/?keysearch=nước+ép+trái+cây"> fruit juice</a></li>
+                              <li><a href="#/san-pham/?keysearch=cà+tím"> eggplant</a></li>
+                              <li><a href="#/san-pham/san-pham/?keysearch=hoa+quả+Việt+Nam">fruit Viet Nam</a></li>
+                              <li><a href="#/san-pham/san-pham/?keysearch=dưa+leo"> cucumber</a></li>
+                              <li><a href="#/san-pham/?keysearch=hoa+quả+nhập+khẩu"> imported fruits</a></li>
+                              <li><a href="#/san-pham/?keysearch=cà+rốt"> carrot</a></li>
+                              <li><a href="#/san-pham/?keysearch=khoai+tây">potato</a></li>
+                              <li><a href="#/san-pham/san-pham/?keysearch=bơ+sáp"> butter wax</a></li>
+                              <div class="clear"></div>
+                            </ul>
+                          </div>
+                        </div>
+                  </div>
+                   <div class="clear"></div>
+                   <div class="clear">
+                
+                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+	    </section>
+    </article>
+  </div>
+	<div id="banner_footer">
+  		<ul>
+  	        <li><a href=""><img src="https://cdn.web30s.vn/datafiles/4448/upload/images/apples-fruits-garden-6028.png" /></a></li>
+        	<div class="clr"></div>
+  		</ul>
+	</div>
+	<div class="footer-copy" >
+  		<div class="container">
+    		<div class="footer-copy-grids">
+     			
+        			<div class="col-md-3 col-sm-6 col-xs-6 col-min-12 footer-copy-grid footer-h1">
+          				<h3><span>CLEANED UP THE WORLD</span></h3>
+          					<div class="nd"><p>Please contact us for advice.</p>
+							<p>Address:Address: No. 123/2/3, Ly Thuong Kiet Street, Tan Binh Dist. Ho Chi Minh</p>
+							<p>Phone: <a href="tel:+84 0123 456 7891">+84 0123 456 7891 </a></p>
+							<p>Email: <a href="mailto:admin@webnongnghiep.web30s.vn">admin@webnongnghiep.web30s.vn</a></p></div>
+      				</div>
+      		
+        			<div class="col-md-3 col-sm-6 col-xs-6 col-min-12 footer-copy-grid footer-h2">
+          				<h3><span>Introduce</span></h3>
+          					<ul class='nav-bottom navi_bottom  navi_bottom_cus1'>
+          						<li class='li_bottom li_bottom_cus1'> <i class='' aria-hidden='true'></i> <a class='a_navi_bottom a_navi_bottom_cus1' href='Ve-chung-toi-355798'>About us</a></li>
+          						<li class='li_bottom li_bottom_cus1'> <i class='' aria-hidden='true'></i> <a class='a_navi_bottom a_navi_bottom_cus1' href='Tam-nhin-su-menh-355799'>Vision-mission</a></li>
+          						<li class='li_bottom li_bottom_cus1'> <i class='' aria-hidden='true'></i> <a class='a_navi_bottom a_navi_bottom_cus1' href='Bo-may-to-chuc-355801'>Organizational structure</a></li>
+          						<li class='li_bottom li_bottom_cus1'> <i class='' aria-hidden='true'></i> <a class='a_navi_bottom a_navi_bottom_cus1' href='He-thong-phan-phoi-355802'>Distribution system</a></li>
+          						<li class='li_bottom li_bottom_cus1'> <i class='' aria-hidden='true'></i> <a class='a_navi_bottom a_navi_bottom_cus1' href='Doi-tac-355804'>Partner</a></li>
+          					</ul>     
+          			</div>
+        			<div class="col-md-3 col-sm-6 col-xs-6 col-min-12 footer-copy-grid footer-h3">
+          				<h3><span>Rules</span></h3>
+          					<ul class='nav-bottom navi_bottom  navi_bottom_cus1'>
+          						<li class='li_bottom li_bottom_cus1'> <i class='' aria-hidden='true'></i> <a class='a_navi_bottom a_navi_bottom_cus1' href='Chinh-Sach-Rieng-Tu-355793'>Privacy Policy</a></li>
+          						<li class='li_bottom li_bottom_cus1'> <i class='' aria-hidden='true'></i> <a class='a_navi_bottom a_navi_bottom_cus1' href='Dieu-Khoan-Dieu-Kien-355794'>Terms & Conditions</a>
+          						</li><li class='li_bottom li_bottom_cus1'> <i class='' aria-hidden='true'></i> <a class='a_navi_bottom a_navi_bottom_cus1' href='Thoa-Thuan-Nguoi-Dung-355795'>User Agreement</a></li>
+          						<li class='li_bottom li_bottom_cus1'> <i class='' aria-hidden='true'></i> <a class='a_navi_bottom a_navi_bottom_cus1' href='Chinh-sach-doi-tra-355796'>Reimbursement policy</a></li>
+          						<li class='li_bottom li_bottom_cus1'> <i class='' aria-hidden='true'></i> <a class='a_navi_bottom a_navi_bottom_cus1' href='Chinh-sach-bao-hanh-355797'>Warranty Policy</a></li>
+          					</ul>      
+          			</div>
+        			<div class="col-md-3 col-sm-6 col-xs-6 col-min-12 footer-copy-grid footer-h4">
+          				<h3><span>SIGN UP FOR</span></h3>
+          					<p>Register email for the latest promotion from us!</p>
+          					<label>
+            					<input type="text"  name="newsletter" id="newsletter_id" value="Import address email..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Import address email...';}" >
+            					<input type="button" value="Đăng ký" onclick="return NewsLetter();">
+          					</label>
+        			</div>
+        <div class="clearfix"> </div>
+      </div>
+    </div>
+  </div>
+
+
+<!--footer-->
+  <div class="footer">
+    <div class="container">
+      <p class="footer-grid"><span class="footer_copyright"><a href="https://webnongnghiep.web30s.vn"  class="a_copyright">Copyright ©</a></span></p>
+    </div>  
+  </div>
+  <div id="fb-root"></div>
+
+</div>
+</body>
+</html>
